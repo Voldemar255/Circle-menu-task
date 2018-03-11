@@ -15,50 +15,69 @@ body {
 .outer-circle {
     width: 46px;
     height: 46px;
+    z-index: 2;
     box-shadow: 1px -1px 5px 6px #3b48a4;
     border-radius: 50px;
     margin-bottom: 5px;
     margin-left: 700px;
     margin-top: 350px;
-    /*position: absolute;*/
+    position: absolute;
+    padding: 3px;
 }
 .outer-circle img {
     margin: 0 auto;
     margin-left: 10px;
     margin-top: 10px;
 }
+
 .icon {
     width: 40px;
     height: 40px;
     border: 2px solid white;
     border-radius: 50px;
     margin: 0 auto;
+    margin-top: 1px;
+    margin-right: 1px;
     display: flex;
 }
+
 .circle {
     width: 500px;
     height: 500px;
-    border-radius: 250px;
     border: 3px solid #3b48a4;
-    margin-left: -200px;
     margin-top: 50px;
-    box-shadow: 1px -1px 8px 8px #3b48a4;
+    margin-left: -250px;
+    transform: rotate(45deg);
+    /*box-shadow: 1px -1px 8px 8px #3b48a4;*/
 }
 .inner-circle {
     width: 460px;
     height: 460px;
-    border-radius: 230px;
-    box-shadow: 1px -1px 5px 5px #655eae;
-    margin-top: 20px;
+    border: 3px solid #655eae;
+    /*box-shadow: 1px -1px 5px 5px #655eae;*/
+    margin-top: 15px;
     margin-left: 20px;
+}
+.circle, .inner-circle {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    position: fixed;
+    padding: 0;
+    left: 0;
 }
 .animate-menu p {
     font-size: 12px;
     font-weight: 400;
     color: aliceblue;
-    margin-left: 20px;
+    margin-left: 40px;
+    display: block;
+    width: 100%;
 }
 .menu-block {
     display: flex;
     flex-direction: row;
+}
+.visible {
+  visibility: hidden;
 }
