@@ -7,7 +7,6 @@ body {
 
 }
 .container  {
-    width: 1170px;
     display: flex;
     flex-direction: row;
     margin-top: 50px;
@@ -20,8 +19,6 @@ body {
     box-shadow: 1px -1px 5px 6px #3b48a4;
     border-radius: 50px;
     margin-bottom: 5px;
-    margin-left: 700px;
-    margin-top: 350px;
     position: absolute;
     padding: 3px;
 }
@@ -71,10 +68,7 @@ body {
     font-size: 12px;
     font-weight: 400;
     color: aliceblue;
-    margin-left: 700px;
-    margin-top: 360px;
     display: block;
-    width: 100%;
 }
 .menu-block {
     display: flex;
