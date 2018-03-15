@@ -22,6 +22,26 @@ window.onwheel = function() {
     radiusPosition(360, "text", angle);
 };
 
+
+var myBtn = document.getElementById('next');
+var angle = 0;
+myBtn.addEventListener('click', function () {
+    var delta = 0.5711986642890533;
+    angle += delta;
+    radiusPosition(290, "outer-circle", angle);
+    radiusPosition(360, "text", angle);
+});
+
+
+
+
+
+
+
+
+
+
+
 // $(function () {
 //     $('.outer-circle').on('scroll'), function (event) {
 //         (event.target).addClass('visible');

@@ -64,7 +64,7 @@ body {
     padding: 0;
     left: 0;
 }
-.animate-menu p {
+.animate-menu p, #next span {
     font-size: 12px;
     font-weight: 400;
     color: aliceblue;
@@ -76,4 +76,18 @@ body {
 }
 .visible {
   visibility: hidden;
+}
+#next {
+    display: block;
+    width: 80px;
+    height: 40px;
+    border: 2px solid #655eae;
+    border-radius: 10px;
+    background: transparent;
+    margin-top: 300px;
+    margin-left: 600px;
+    outline: none;
+}
+#next:hover {
+    box-shadow: 1px -1px 8px 8px #3b48a4;
 }
