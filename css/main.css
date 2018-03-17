@@ -77,17 +77,28 @@ body {
 .visible {
   visibility: hidden;
 }
-#next {
+#next, #prev {
     display: block;
-    width: 80px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border: 2px solid #655eae;
-    border-radius: 10px;
-    background: transparent;
-    margin-top: 300px;
+    border-radius: 5px;
+    background-image: url("../images/arrow-up.svg");
+    margin-top: 220px;
     margin-left: 600px;
     outline: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    opacity: .5;
 }
-#next:hover {
+#prev {
+    background-image: url("../images/arrow-down.svg");
+    margin-top: 300px;
+    margin-left: -50px;
+}
+
+#next:hover, #prev:hover {
     box-shadow: 1px -1px 8px 8px #3b48a4;
+    opacity: 1;
 }
